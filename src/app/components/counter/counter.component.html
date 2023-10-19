@@ -1,0 +1,27 @@
+<div class="mt-4">
+  <div class="row">
+    <div class="col-2">
+      <button
+        class="btn btn-danger w-100"
+        type="button"
+        (click)="handleCounter(-1)"
+        [disabled]="disableSubs"
+      >
+        -
+      </button>
+    </div>
+    <div class="col-8 text-center">
+      <h4 class="bg-secondary-subtle w-100 h-100 d-flex justify-content-center align-items-center">{{ count }}</h4>
+    </div>
+    <div class="col-2">
+      <button
+        class="btn btn-success w-100"
+        type="button"
+        (click)="handleCounter(1)"
+        [disabled]="disableAdd"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</div>
